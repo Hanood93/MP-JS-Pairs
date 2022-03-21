@@ -38,6 +38,17 @@ Array.prototype.getRandom = function () {
 
 function pairs(names) {
   // Your code goes here
+if (names.length===[])return [];
+if (!names)return [];
+while (names.length>1){
+const firstName = names.getRandom();
+const secondName = names.getRandom();
+const array = [firstName,secondName];
+result.push(pair);
+console.log(result);
+}
+if (names.length===1) result.push(names);
+return result;
 }
 
 module.exports = pairs;
